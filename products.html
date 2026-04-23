@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUXXE — Precision-crafted luxury sunglasses. Elevate your vision with our internationally acclaimed eyewear collection." />
+  <meta name="keywords" content="luxury sunglasses, premium eyewear, designer glasses, LUXXE, fashion sunglasses" />
+  <meta name="author" content="LUXXE Eyewear" />
+  <meta property="og:title" content="LUXXE — Luxury Eyewear" />
+  <meta property="og:description" content="Precision-crafted luxury sunglasses for the discerning eye." />
+  <meta property="og:type" content="website" />
+  <title>LUXXE — Luxury Eyewear</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕶️</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="glasses.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top luxxe-nav">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand luxxe-logo" href="#home">
+        <span class="logo-mark">✦</span> LUXXE
+      </a>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler luxxe-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link luxxe-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="categories.html">Collections</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="testimonials.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn luxxe-btn-outline" href="products.html">Explore Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+
+<!-- ========== PRODUCTS SECTION ========== -->
+  <section id="products" class="section-pad products-section">
+    <div class="container">
+      <div class="text-center mb-5" data-animate="fade-up">
+        <p class="section-eyebrow">The Collection</p>
+        <h2 class="section-title">Shop All Eyewear</h2>
+        <p class="section-subtitle">Each pair is a conversation starter.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="product-filters mb-5" data-animate="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="unisex">Unisex</button>
+      </div>
+
+      <div class="row g-4" id="productsGrid">
+
+        <!-- Product 1 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="men" data-animate="fade-up">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=600&auto=format&fit=crop&q=85"
+                alt="The Atlas" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=800&auto=format&fit=crop&q=90"
+                  data-name="The Atlas" data-price="$295" data-desc="Classic aviator style with titanium frame and ocean-blue polarized lenses. UV400 protection. Ideal for the modern explorer.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge">MEN</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">The Atlas</h4>
+              <p class="product-desc">Titanium Aviator · Ocean Blue</p>
+              <div class="product-footer">
+                <span class="product-price">$295</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                  <span>(48)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="women" data-animate="fade-up" data-delay="80">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&auto=format&fit=crop&q=85"
+                alt="La Belle" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1577803645773-f96470509666?w=800&auto=format&fit=crop&q=90"
+                  data-name="La Belle" data-price="$340" data-desc="Oversized round frames in warm tortoiseshell acetate with gradient amber lenses. The face-framing statement piece.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge new-badge">NEW</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">La Belle</h4>
+              <p class="product-desc">Round Oversized · Tortoiseshell</p>
+              <div class="product-footer">
+                <span class="product-price">$340</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <span>(91)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="unisex" data-animate="fade-up" data-delay="160">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?w=600&auto=format&fit=crop&q=85"
+                alt="The Monolith" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1508296695146-257a814070b4?w=800&auto=format&fit=crop&q=90"
+                  data-name="The Monolith" data-price="$415" data-desc="Architectural flat-top frame in matte jet black. Mirror chrome lenses. The ultimate statement in minimal power.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge">UNISEX</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">The Monolith</h4>
+              <p class="product-desc">Flat Top · Matte Black</p>
+              <div class="product-footer">
+                <span class="product-price">$415</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <span>(63)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="women" data-animate="fade-up" data-delay="240">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1614715838979-2ad2a1082e90?w=600&auto=format&fit=crop&q=85"
+                alt="Venezia II" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1614715838979-2ad2a1082e90?w=800&auto=format&fit=crop&q=90"
+                  data-name="Venezia II" data-price="$480" data-desc="Cat-eye silhouette in wine-red acetate with gradient smoke lenses. Handcrafted in Venice, Italy.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge limited-badge">LIMITED</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Venezia II</h4>
+              <p class="product-desc">Cat-Eye · Wine Red</p>
+              <div class="product-footer">
+                <span class="product-price">$480</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                  <span>(37)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="men" data-animate="fade-up">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1553735945-3dd7b1845d12?w=600&auto=format&fit=crop&q=85"
+                alt="The Envoy" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1553735945-3dd7b1845d12?w=800&auto=format&fit=crop&q=90"
+                  data-name="The Envoy" data-price="$359" data-desc="Semi-rimless titanium frames in gold. Inspired by diplomatic precision. Polarized grey lenses with anti-reflective coating.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge">MEN</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">The Envoy</h4>
+              <p class="product-desc">Semi-Rimless · Gold</p>
+              <div class="product-footer">
+                <span class="product-price">$359</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <span>(55)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="unisex" data-animate="fade-up" data-delay="80">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&auto=format&fit=crop&q=85"
+                alt="The Void" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&auto=format&fit=crop&q=90"
+                  data-name="The Void" data-price="$299" data-desc="Wraparound sporty silhouette in carbon-black acetate. Deep smoke lenses with polarized UV400 technology.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge new-badge">NEW</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">The Void</h4>
+              <p class="product-desc">Wraparound · Carbon Black</p>
+              <div class="product-footer">
+                <span class="product-price">$299</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                  <span>(44)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="women" data-animate="fade-up" data-delay="160">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&auto=format&fit=crop&q=85"
+                alt="Soleil Rose" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=800&auto=format&fit=crop&q=90"
+                  data-name="Soleil Rose" data-price="$395" data-desc="Delicate rose-gold metal frame with blush pink gradient lenses. The definition of feminine luxury.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge">WOMEN</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Soleil Rose</h4>
+              <p class="product-desc">Round Metal · Rose Gold</p>
+              <div class="product-footer">
+                <span class="product-price">$395</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <span>(78)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-sm-6 col-lg-3 product-item" data-category="men" data-animate="fade-up" data-delay="240">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&auto=format&fit=crop&q=85"
+                alt="The Chairman" loading="lazy" class="product-img" />
+              <div class="product-actions">
+                <button class="prod-action-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                  data-img="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&auto=format&fit=crop&q=90"
+                  data-name="The Chairman" data-price="$529" data-desc="Heavy-gauge square acetate in deep cognac with G-15 polarized lenses. Authority in every angle.">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="prod-action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+              <span class="product-badge limited-badge">LIMITED</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">The Chairman</h4>
+              <p class="product-desc">Square Acetate · Cognac</p>
+              <div class="product-footer">
+                <span class="product-price">$529</span>
+                <div class="product-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <span>(29)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- END Products Grid -->
+    </div>
+  </section>
+  <!-- END PRODUCTS -->
+
+<!-- ========== FOOTER ========== -->
+  <footer class="luxxe-footer">
+    <div class="container">
+
+      <div class="row g-5 footer-top">
+
+        <div class="col-lg-4">
+          <a class="footer-logo" href="index.html">
+            <span class="logo-mark">✦</span> LUXXE
+          </a>
+          <p class="footer-tagline mt-3">
+            Luxury eyewear crafted for those who see life as art. Milan-born. Globally worn.
+          </p>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Collections</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Collections</h5>
+          <ul class="footer-links">
+            <li><a href="categories.html">Men</a></li>
+            <li><a href="categories.html">Women</a></li>
+            <li><a href="categories.html">Unisex</a></li>
+            <li><a href="products.html">New In</a></li>
+            <li><a href="products.html">Limited Edition</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Support</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Legal</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 LUXXE Eyewear. All rights reserved. Crafted with precision in Milan.</p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-apple-pay"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+  <!-- ========== PRODUCT MODAL ========== -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-label="Product Quick View">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content luxxe-modal">
+        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="modal-img-wrap">
+                <img src="" id="modalImg" alt="Product" class="modal-product-img" />
+              </div>
+            </div>
+            <div class="col-md-6 modal-product-info">
+              <p class="modal-eyebrow">LUXXE Eyewear</p>
+              <h3 id="modalName" class="modal-product-name"></h3>
+              <div id="modalPrice" class="modal-product-price"></div>
+              <div class="modal-stars my-3">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                <span class="ms-2">(4.7)</span>
+              </div>
+              <p id="modalDesc" class="modal-product-desc"></p>
+
+              <div class="modal-features mt-3">
+                <div class="modal-feature"><i class="fas fa-check"></i> UV400 Protection</div>
+                <div class="modal-feature"><i class="fas fa-check"></i> Polarized Lenses</div>
+                <div class="modal-feature"><i class="fas fa-check"></i> Handcrafted Frames</div>
+                <div class="modal-feature"><i class="fas fa-check"></i> Lifetime Warranty</div>
+              </div>
+
+              <div class="modal-actions mt-4">
+                <a href="#contact" class="btn luxxe-btn-dark w-100 mb-2" data-bs-dismiss="modal">Inquire to Buy</a>
+                <button class="btn luxxe-btn-outline w-100 wishlist-modal-btn">
+                  <i class="far fa-heart me-2"></i> Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL -->
+
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+  <!-- ========== SCRIPTS ========== -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

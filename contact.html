@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUXXE — Precision-crafted luxury sunglasses. Elevate your vision with our internationally acclaimed eyewear collection." />
+  <meta name="keywords" content="luxury sunglasses, premium eyewear, designer glasses, LUXXE, fashion sunglasses" />
+  <meta name="author" content="LUXXE Eyewear" />
+  <meta property="og:title" content="LUXXE — Luxury Eyewear" />
+  <meta property="og:description" content="Precision-crafted luxury sunglasses for the discerning eye." />
+  <meta property="og:type" content="website" />
+  <title>LUXXE — Luxury Eyewear</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕶️</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="glasses.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top luxxe-nav">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand luxxe-logo" href="#home">
+        <span class="logo-mark">✦</span> LUXXE
+      </a>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler luxxe-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link luxxe-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="categories.html">Collections</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="testimonials.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link luxxe-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn luxxe-btn-outline" href="products.html">Explore Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+
+<!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section-pad contact-section">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-lg-5" data-animate="fade-right">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">We'd Love to<br /><em>Hear from You</em></h2>
+          <p class="section-body mt-3">
+            Whether you're seeking personalized style advice, corporate gifting, or press inquiries — our team is at your service.
+          </p>
+
+          <div class="contact-info mt-4">
+            <div class="contact-info-item">
+              <i class="fas fa-location-dot contact-icon"></i>
+              <div>
+                <strong>Showroom</strong>
+                <p>Via Monte Napoleone 12, Milan, Italy</p>
+              </div>
+            </div>
+            <div class="contact-info-item mt-3">
+              <i class="fas fa-phone contact-icon"></i>
+              <div>
+                <strong>Phone</strong>
+                <p>+39 02 7600 1234</p>
+              </div>
+            </div>
+            <div class="contact-info-item mt-3">
+              <i class="fas fa-envelope contact-icon"></i>
+              <div>
+                <strong>Email</strong>
+                <p>hello@luxxe.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 offset-lg-1" data-animate="fade-left">
+          <form id="contactForm" class="contact-form" novalidate>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control luxxe-input" id="contactName" placeholder="Your name" />
+                  <div class="error-msg" id="nameError"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email *</label>
+                  <input type="email" class="form-control luxxe-input" id="contactEmail" placeholder="your@email.com" />
+                  <div class="error-msg" id="emailError"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="contactPhone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control luxxe-input" id="contactPhone" placeholder="+1 000 000 0000" />
+                  <div class="error-msg" id="phoneError"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="contactMsg" class="form-label">Message *</label>
+                  <textarea class="form-control luxxe-input" id="contactMsg" rows="5" placeholder="Tell us how we can help..."></textarea>
+                  <div class="error-msg" id="msgError"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn luxxe-btn-dark w-100 contact-submit">
+                  <span class="submit-text">Send Message</span>
+                  <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+              </div>
+              <div class="col-12">
+                <div id="formSuccess" class="form-success" style="display:none;">
+                  <i class="fas fa-check-circle me-2"></i> Thank you! We'll be in touch within 24 hours.
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END CONTACT -->
+
+<!-- ========== FOOTER ========== -->
+  <footer class="luxxe-footer">
+    <div class="container">
+
+      <div class="row g-5 footer-top">
+
+        <div class="col-lg-4">
+          <a class="footer-logo" href="index.html">
+            <span class="logo-mark">✦</span> LUXXE
+          </a>
+          <p class="footer-tagline mt-3">
+            Luxury eyewear crafted for those who see life as art. Milan-born. Globally worn.
+          </p>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Collections</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Collections</h5>
+          <ul class="footer-links">
+            <li><a href="categories.html">Men</a></li>
+            <li><a href="categories.html">Women</a></li>
+            <li><a href="categories.html">Unisex</a></li>
+            <li><a href="products.html">New In</a></li>
+            <li><a href="products.html">Limited Edition</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Support</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Legal</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 LUXXE Eyewear. All rights reserved. Crafted with precision in Milan.</p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-apple-pay"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+  <!-- ========== PRODUCT MODAL ========== -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-label="Product Quick View">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content luxxe-modal">
+        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="modal-img-wrap">
+                <img src="" id="modalImg" alt="Product" class="modal-product-img" />
+              </div>
+            </div>
+            <div class="col-md-6 modal-product-info">
+              <p class="modal-eyebrow">LUXXE Eyewear</p>
+              <h3 id="modalName" class="modal-product-name"></h3>
+              <div id="modalPrice" class="modal-product-price"></div>
+              <div class="modal-stars my-3">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                <span class="ms-2">(4.7)</span>
+              </div>
+              <p id="modalDesc" class="modal-product-desc"></p>
+
+              <div class="modal-features mt-3">
+                <div class="modal-feature"><i class="fas fa-check"></i> UV400 Protection</div>
+                <div class="modal-feature"><i class="fas fa-check"></i> Polarized Lenses</div>
+                <div class="modal-feature"><i class="fas fa-check"></i> Handcrafted Frames</div>
+                <div class="modal-feature"><i class="fas fa-check"></i> Lifetime Warranty</div>
+              </div>
+
+              <div class="modal-actions mt-4">
+                <a href="#contact" class="btn luxxe-btn-dark w-100 mb-2" data-bs-dismiss="modal">Inquire to Buy</a>
+                <button class="btn luxxe-btn-outline w-100 wishlist-modal-btn">
+                  <i class="far fa-heart me-2"></i> Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL -->
+
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+  <!-- ========== SCRIPTS ========== -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
